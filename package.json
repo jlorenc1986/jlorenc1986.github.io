@@ -41,6 +41,7 @@
     "build": "npm run clean && webpack --progress --colors",
     "lint": " eslint app",
     "clean": "rimraf dist",
+    "api" : "node api.server.js",
     "develop": "npm run build && DEVTOOLS=true node server.js",
     "dist": "npm run clean && npm run lint && NODE_ENV=production webpack --config webpack.config.production.js",
     "deploy": "npm run dist && gh-pages -d dist"
