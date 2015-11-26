@@ -32,6 +32,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader: 'style-loader!css-loader!cssnext-loader' },
+      { test: /\.scss$/, loader: 'style-loader!css-loader!cssnext-loader!sass' },
       { test: /\.js$/, loaders: ['babel'], include: path.join(__dirname, 'app') }
     ]
   }
