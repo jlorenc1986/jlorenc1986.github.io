@@ -32,6 +32,15 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader: 'style-loader!css-loader!cssnext-loader' },
+
+    {
+        test: /\.(jpg|png|gif|svg)$/i,
+        loaders: [
+            'file?hash=sha512&digest=hex&name=[hash].[ext]',
+            'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+        ]
+    },
+
       { test: /\.scss$/, loaders:["style","css","sass"] },
       { test: /\.js$/, exclude: /node_modules/ , loaders: ['react-hot', 'babel'] }
     ]

@@ -1,8 +1,21 @@
 @import '~purecss-sass';
 
+body{
+
+  font-family: 'Fjalla One', sans-serif;
+
+}
+
+#app{
+
+
+  background: url('../assets/images/berlin2.jpg') no-repeat bottom ;
+
+}
 
 .jsl-avatar {
   animation: pulse 5s ;
+  border-radius: 50%;
 
 }
 
