@@ -1,0 +1,19 @@
+@import '~purecss-sass';
+
+
+.jsl-avatar {
+  animation: pulse 5s ;
+
+}
+
+
+@keyframes pulse {
+
+  0% {
+     width: 20%;
+   }
+   100% {
+      width: 100%;
+   }
+
+}

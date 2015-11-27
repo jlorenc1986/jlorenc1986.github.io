@@ -25,15 +25,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'jlorenc1986',
       filename: 'index.html',
-      template: 'index.template.html'
-    //  favicon: path.join(__dirname, 'assets', 'images', 'favicon.ico')
+      template: 'index.template.html',
+      favicon: path.join(__dirname, 'assets', 'images', 'favicon.ico')
     })
   ],
   module: {
     loaders: [
       { test: /\.css$/, loader: 'style-loader!css-loader!cssnext-loader' },
-      { test: /\.scss$/, loader: 'style-loader!css-loader!cssnext-loader!sass' },
-      { test: /\.js$/, loaders: ['babel'], include: path.join(__dirname, 'app') }
+      { test: /\.scss$/, loaders:["style","css","sass"] },
+      { test: /\.js$/, exclude: /node_modules/ , loaders: ['react-hot', 'babel'] }
     ]
   }
 };
