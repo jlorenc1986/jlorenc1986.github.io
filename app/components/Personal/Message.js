@@ -1,6 +1,4 @@
-import React, { Component, PropTypes} from 'react';
-
-
+import React, { Component, PropTypes} from 'react'
 
 export default class Message extends Component{
 

@@ -80,5 +80,8 @@
   "bugs": {
     "url": "https://github.com/jlorenc1986/jlorenc1986.github.io/issues"
   },
-  "homepage": "https://github.com/jlorenc1986/jlorenc1986.github.io#readme"
+  "homepage": "https://github.com/jlorenc1986/jlorenc1986.github.io#readme",
+  "jshintConfig": {
+  "esnext": true
+}
 }
