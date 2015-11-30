@@ -1,34 +1,39 @@
 @import '~purecss-sass';
 
-body{
-
+body {
   font-family: 'Fjalla One', sans-serif;
-
 }
 
-#app{
-
-
-  background: url('../assets/images/berlin2.jpg') no-repeat bottom ;
-
+#app {
+  background: url('../assets/images/berlin2.jpg') no-repeat bottom;
 }
 
 .jsl-avatar {
-  animation: pulse 5s ;
   border-radius: 80%;
-
-
+  border: solid black;
+  background-image: url('../assets/images/lorenc.jpg');
 }
 
+.jsl-avatar:hover {
+  animation: circus 2s;
+}
 
-@keyframes pulse {
+@keyframes circus {
 
-  0% {
-     width: 0%;
-   }
+  from {
+    transform: rotate(0deg);
+  }
 
-   100% {
-      width: 100%;
-   }
+  50% {
+    transform: rotate(360deg);
+    border-color: red;
+  }
 
+  70% {
+    border: dotted blue;
+  }
+
+  to {
+    transform: rotate(-720deg);
+  }
 }

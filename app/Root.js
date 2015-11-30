@@ -27,18 +27,6 @@ function getRootChildren (props) {
 
   ];
 
-  if (__DEVTOOLS__) {
-
-    rootChildren.push(
-
-      <DebugPanel top right bottom>
-        <DevTools store={store} monitor={LogMonitor} />
-      </DebugPanel>
-
-
-    )
-  }
-
   return rootChildren;
 }
 
