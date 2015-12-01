@@ -1,8 +1,11 @@
 @import '~purecss-sass';
 
-body {
-  font-family: 'Fjalla One', sans-serif;
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+    /* Set your content font stack here: */
+    font-family: 'Fjalla One', sans-serif;
 }
+
 
 #app {
   background: url('../assets/images/berlin2.jpg') no-repeat bottom;
