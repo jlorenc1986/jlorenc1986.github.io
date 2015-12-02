@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react'
 const Code = React.createClass({
   render () {
     return (
-      <div className='pure-u-1-2 pure-u-md-3-4' >
+      <div className='pure-u-1-1' >
 <ul className="fa-ul">
 <li>       <i className="fa fa-spin fa-bitbucket fa-lg "></i> Bitbucket </li>
     <li>   <i className="fa fa-github-alt fa-rotate-90"></i> Github</li>
