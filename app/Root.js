@@ -11,6 +11,7 @@ import { createStore } from 'redux';
 import { IntlProvider } from 'react-intl'
 import reducers from './reducers/application';
 import * as i18n from "./i18n";
+
 const initialState = {
   application: {
     locale: storage.get('locale') || 'en',
@@ -22,10 +23,18 @@ export const store = configureStore(initialState);
 
 function getRootChildren (props) {
 
+  const intlData = {
+   locale: props.application.locale,
+   messages: i18n[props.application.locale]
+ }
+
+
+
   const rootChildren = [
+
       renderRoutes()
 
-  ];
+  ]
 
   return rootChildren;
 }
@@ -42,14 +51,17 @@ function renderRoutes () {
 
 @connect(({ application }) => ({ application }))
 export default class Root extends Component{
+  static propTypes = {
+  application: PropTypes.object.isRequired
+}
 
   render(){
 
     return (
 
-    <div>
+
 <div>{getRootChildren(this.props)}</div>
-       </div>
+
   )
 
   }
