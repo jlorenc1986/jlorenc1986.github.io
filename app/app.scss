@@ -3,25 +3,31 @@
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
     /* Set your content font stack here: */
-    font-family: 'Fjalla One', sans-serif;
+  font-family: 'Fjalla One', sans-serif;
 }
 
-
-#app {
-  background: url('../assets/images/berlin2.jpg') no-repeat bottom;
+#footer {
+   background: url('../assets/images/berlin1.png') top;
+   max-width: 100%;
+   min-height: 100px;
 }
 
-.list-social{
+.list-social {
   text-align: center;
-  a:hover,a:visited,a:link,a:active{
+  a: hover,a:visited,a:link,a:active{
     text-decoration: none;
-    color: WindowText;
-  }
-  ul{
+  color: WindowText;
+}
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  }
+
+}
+li{
+  padding: 2%;
+}
 
 }
 
@@ -55,18 +61,22 @@ html, button, input, select, textarea,
   }
 }
 
-.utils-top-margin-5{
+.utils-top-margin-5 {
   margin-top: 5%;
 }
-.utils-top-margin-10{
+
+.utils-top-margin-10 {
   margin-top: 10%;
 }
-.utils-top-margin-15{
+
+.utils-top-margin-15 {
   margin-top: 15%;
 }
-.utils-top-margin-25{
+
+.utils-top-margin-25 {
   margin-top: 25%;
 }
-.utils-top-margin-20{
+
+.utils-top-margin-20 {
   margin-top: 20%;
 }
