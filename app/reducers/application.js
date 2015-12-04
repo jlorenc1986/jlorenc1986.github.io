@@ -1,12 +1,12 @@
-import { combineReducers } from 'redux';
-import {SWITCH_LOCALE} from '../constants/constants';
+import { combineReducers } from 'redux'
+import {SWITCH_LOCALE} from '../constants/constants'
 
 import {
   ReduxRouter,
   routerStateReducer,
   reduxReactRouter,
   pushState
-} from 'redux-router';
+} from 'redux-router'
 
 
 function application(state={},action)
@@ -17,16 +17,16 @@ function application(state={},action)
     case SWITCH_LOCALE:
       return [...state,
         {locale:action.payload}
-      ];
-      break;
+      ]
+      break
     default:
-      return state;
+      return state
   }
 }
 
 const reducers = combineReducers({
 application,
 router:routerStateReducer
-});
+})
 
-export default reducers;
+export default reducers

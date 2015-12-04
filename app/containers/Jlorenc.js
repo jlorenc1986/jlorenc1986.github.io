@@ -13,6 +13,6 @@ export default class Jlorenc extends Component{
       <div className='pure-g'>
       <Gravatar/><Message /><Footer />
       </div >
-    );
+    )
   }
 }
