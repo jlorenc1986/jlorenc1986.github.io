@@ -30,7 +30,7 @@ module.exports = {
       title: 'jlorenc1986',
       filename: 'index.html',
       template: 'index.template.html',
-      favicon: path.join(__dirname, '../favicon.ico')
+      favicon: path.join(__dirname, 'favicon.ico')
     })
   ],
   module: {
