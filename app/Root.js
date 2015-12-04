@@ -8,7 +8,6 @@ import * as storage from './persistance/storage'
 import configureStore from './utils/configureStore'
 import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react'
 import { createStore } from 'redux'
-import { IntlProvider } from 'react-intl'
 import reducers from './reducers/application'
 import * as i18n from "./i18n"
 
@@ -22,11 +21,6 @@ const initialState = {
 export const store = configureStore(initialState)
 
 function getRootChildren (props) {
-
-  const intlData = {
-   locale: props.application.locale,
-   messages: i18n[props.application.locale]
- }
 
 
 
