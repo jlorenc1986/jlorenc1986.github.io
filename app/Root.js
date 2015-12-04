@@ -9,7 +9,6 @@ import configureStore from './utils/configureStore'
 import { DevTools, DebugPanel, LogMonitor } from 'redux-devtools/lib/react'
 import { createStore } from 'redux'
 import reducers from './reducers/application'
-import * as i18n from "./i18n"
 
 const initialState = {
   application: {
