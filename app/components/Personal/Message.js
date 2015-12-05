@@ -6,8 +6,7 @@ export default class Message extends Component{
   render() {
     return (
 
-        <div className='pure-u-1 pure-u-md-1-2 utils-top-margin-5' > "Hi Everyone, my name is Lorenc
-         I m a passionate Senior Frontend Engineer, really in love with JS and functional progamming"
+        <div className='pure-u-1 pure-u-md-1-2 utils-top-margin-5' > "Hi Everyone, my name is Lorenc, I'm a passionate Senior Frontend Engineer, really in love with JS and functional programming"
 
 
         <Code />
